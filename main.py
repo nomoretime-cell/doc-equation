@@ -19,7 +19,12 @@ def post_fork_func():
 
 
 @app_service(path="/api/v1/parser/ppl/equation", inparam_type="flat")
-async def process(content_base64: str, page_idx: int, block_idx: int):
+async def process(
+    content_base64: str,
+    type_block_idx: int,
+    type_block_num: int,
+    block_idx: int,
+):
     image_byte = base64.b64decode(content_base64)
     image = io.BytesIO(image_byte)
     text = inner_process([image], [2048], model, 1)
