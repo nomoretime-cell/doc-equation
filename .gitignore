@@ -1,2 +1,4 @@
 equation/__pycache__/*
 model/*
+nltk.tar.gz
+docker/images/
