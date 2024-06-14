@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pyfunvice = "^0.1.9"
+pyfunvice = "^0.1.10"
 nougat-ocr = "^0.1.17"
 torch = "^2.3.0"
 python-dotenv = "^1.0.1"

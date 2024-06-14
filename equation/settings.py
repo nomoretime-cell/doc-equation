@@ -7,10 +7,6 @@ import torch
 
 
 class Settings(BaseSettings):
-    # Redis
-    REDIS_HOST: str = "30.220.144.140"
-    REDIS_PORT: int = 30007
-    
     # General
     WORKER_NUM: int = 1
     TORCH_DEVICE: str = "cpu"
